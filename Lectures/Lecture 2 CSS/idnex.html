@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lecture 2 CSS</title>
+
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="Css/style.css">
+
+
+    <!-- Internal CSS  -->
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+CSS ის ჩართვის 3 მეთოდი
+    Inline CSS   -> ხაზს შიდა სიესესი.  style ატრიბუტის გამოყენებით
+    Internal CSS -> <style></style>
+    External Css -> ფაილით
+ -->
+
+
+
+    <!-- Inline Css -->
+    <h1 style="color:red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium tenetur,
+        distinctio maxime voluptate deserunt perspiciatis sequi beatae maiores illo. Mollitia perspiciatis voluptate
+        dolor minima, consectetur doloremque natus dignissimos. Deserunt?</h1>
+
+
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem doloribus laudantium ipsum eius
+        non qui natus pariatur, iste, ad necessitatibus dicta tempora magnam aperiam quos, ullam fuga blanditiis
+        dignissimos?</h2>
+
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem doloribus laudantium ipsum eius
+        non qui natus pariatur, iste, ad necessitatibus dicta tempora magnam aperiam quos, ullam fuga blanditiis
+        dignissimos?</h2>
+
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem doloribus laudantium ipsum eius
+        non qui natus pariatur, iste, ad necessitatibus dicta tempora magnam aperiam quos, ullam fuga blanditiis
+        dignissimos?</h2>
+
+
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime nobis possimus quaerat. Deserunt,
+        velit voluptatibus ea quidem at molestias nemo dolorum doloribus obcaecati autem sunt modi voluptatum, error
+        quisquam!</h3>
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime nobis possimus quaerat. Deserunt,
+        velit voluptatibus ea quidem at molestias nemo dolorum doloribus obcaecati autem sunt modi voluptatum, error
+        quisquam!</h3>
+    <hr>
+
+    <!-- Class vs Id -->
+    <style>
+        /*  სინტაქსი
+        
+        სელექტორი {
+            თვსიება: მნიშვნელობა;
+            თვისება2: მნიშნელობა2;
+        }
+        
+        
+        */
+
+
+        p {
+            background-color: green;
+        }
+
+        .postParagraph {
+            background-color: royalblue;
+            color: blue;
+        }
+
+        #Queen {
+            background-color: crimson;
+        }
+
+        .asdasd h4 {
+            color: red;
+        }
+    </style>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tempora. Praesentium quod sapiente itaque
+        totam id aut aperiam natus veritatis rerum similique. Nesciunt consequuntur vel quibusdam, fuga repellendus
+        tempora qui!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tempora. Praesentium quod sapiente itaque
+        totam id aut aperiam natus veritatis rerum similique. Nesciunt consequuntur vel quibusdam, fuga repellendus
+        tempora qui!</p>
+
+    <p class="postParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tempora. Praesentium
+        quod sapiente itaque
+        totam id aut aperiam natus veritatis rerum similique. Nesciunt consequuntur vel quibusdam, fuga repellendus
+        tempora qui!</p>
+    <p class="postParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tempora. Praesentium
+        quod sapiente itaque
+        totam id aut aperiam natus veritatis rerum similique. Nesciunt consequuntur vel quibusdam, fuga repellendus
+        tempora qui!</p>
+    <p class="postParagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tempora. Praesentium
+        quod sapiente itaque
+        totam id aut aperiam natus veritatis rerum similique. Nesciunt consequuntur vel quibusdam, fuga repellendus
+        tempora qui!</p>
+
+    <p class="postParagraph" id="Queen">Queen are a British rock band formed in London in 1970. Their classic line-up
+        was Freddie Mercury
+        (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass).
+    </p>
+
+    <h4>aasdasdad</h4>
+
+    <div class="asdasd">
+        <h4>aasdasdad</h4>
+    </div>
+
+    <div>
+        <h4>aasdasdad</h4>
+    </div>
+
+    <style>
+        a[href="asdasd"] {
+            color: Red;
+        }
+        h5,h6{
+            background-color: aqua;
+        }
+    </style>
+
+    <a href="asdasd">asdasdasd</a>
+    <a href="as">asdasdasd</a>
+
+
+
+    <h5>asdasdasd</h5>
+    <h6>asdas</h6>
+
+
+    <hr>
+
+
+    <!-- 
+ -->
+
+    <style>
+        .colorsP{
+            background-color:  white;
+            color:rgb(122, 79, 185);
+        }
+        .colorsP2{
+            color:#7a4fb9;
+            background-color:  white;
+        }
+        .imageDiv{
+            background-image: URL('https://ijon.charite.de/ASASGROUP/images/asdas_cutoffs400.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <h1>colors</h1>
+
+
+    <p class="colorsP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea omnis fuga dicta ipsa harum impedit, temporibus repellat sed eos eveniet officiis architecto nam praesentium nesciunt itaque aperiam neque ipsam?</p>
+    <p class="colorsP2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea omnis fuga dicta ipsa harum impedit, temporibus repellat sed eos eveniet officiis architecto nam praesentium nesciunt itaque aperiam neque ipsam?</p>
+
+
+
+
+    <div style="height:500px" class="imageDiv">
+    
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quos placeat! Eum necessitatibus delectus dignissimos culpa, nostrum soluta maiores quis corporis voluptates mollitia consectetur distinctio, neque molestiae, natus et ipsam.</h1>
+    </div>
+
+
+    <hr>
+
+
+
+
+    <div style="height:500px"></div>
+</body>
+
+</html>
