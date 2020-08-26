@@ -1,35 +1,113 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lecture 2 CSS part 2</title>
 </head>
+
 <body>
-    
+
     <style>
-        .gela{
+        .gela {
             /* border:5px dotted red; */
 
             border-style: dotted;
             border-color: red;
             border-width: 50px;
         }
+
+
+        #Square {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            border: 10px solid green;
+            padding: 40px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        #Square h1 {
+            margin-bottom: 100px;
+        }
+
+
+
+        .figure1 {
+            display: inline-block;
+            width: 40%;
+            background-color: aqua;
+            height: 200px;
+        }
+
+        .figure2 {
+            display: inline-block;
+            width: 50%;
+            background-color: rgb(72, 100, 49);
+            height: 200px;
+
+        }
+
+
+        .test-list li{
+            display: inline-block;
+        }
     </style>
 
-    <h1>Border</h1>
+    <!-- <h1>Border</h1>
 
-    <h2 class="gela">Lorem ipsum , nihil harum?</h2>
-
-
+    <h2 class="gela">Lorem ipsum , nihil harum?</h2> -->
 
 
+    <div id="Square">
+        <h1>asdasd</h1>
+        <p>asdasd</p>
+    </div>
+
+
+    <div class="figure1">
+    </div>
+
+    <div class="figure2">
+
+    </div>
+
+    <ul class="test-list">
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+        <li>asdasd</li>
+    </ul>
 
 
 
+    <style>
+        .centered{
+            width: 300px;
+            height: 300px;
+            margin:auto;
+            background-color: blueviolet;
+        }
+        .right{
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            float:right;
+        }
+
+    </style>
+
+    <div class="centered"></div>
 
 
+    <div class="right"></div>
 
 
 </body>
+
 </html>
