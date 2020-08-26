@@ -1,0 +1,275 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practical Tasks2 - Css</title>
+
+
+    <!-- ამას ყურადღება არ მიაქციო ოდნავ შევალამაზე -->
+    <style>
+        /*უბრალოდ ყველა ელემენტს გავუუქმებ პადინგს და მარჯინს*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .MainContainer{
+            margin: 20px
+        }
+        hr {
+            margin-top: 20px
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <!-- წაიკითხე სანამ დაიწყებ 
+
+        მითითებები:
+
+            ნებისმიერ ელემტს შეგიძლია დაამატო აიდი ან კლასები და მისწვდე იმ სელექტორით როგორიც გაგიხარდება
+            სურვილისამებრ თუ ჩათვლი რომ რაიმე ელემენტის დამატებით უფრო ადვილად იზამ რამეს სრული თავისუფლება გაქვს
+            ყველგან გამოიყენე external css (გარდა იმ შემთხვევებისა სადაც დაკონკრეტებული მაქვს სხვა მეთოდი)
+
+
+
+        ზოგადი ნაწილი:
+        
+            ამისთვის გამოიყენე internal css
+            გვერდის სათაური "Practical Tasks 2 Css" გასტილე შემდეგნაირად:
+                ტექსტის ფერი            - ყავისფერი
+                წექსტის წონა (სიმუქე)    - ბოლდი
+                ტექსტის განლაგება        - ცენტრული
+                ზედა პადინგი            - 20 პქს
+
+
+            ყველა h2-ს გაუწერე შემდეგი თვისებები:
+                ზედა მარჯინი    - 15 პიქსელი
+                ქვედა მარჯინი    - 15 პიიქსელი
+                ფერი             - მწვანე
+
+    -->
+
+    <!-- 
+
+        ამ h1-ს მიეცი აიდი pageHeading და გასტილე:
+        გაცენტრე ტექსი, 
+        მიეცი ფერი:ყავისფერი, 
+        წარწერის სისქე - ბოლდი
+        ზედა პადინგი - 20 px
+    
+    -->
+    <h1 id="pageHeading">Practical Tasks 2 Css</h1>
+    <hr>
+
+    <div class="MainContainer">  <!-- უბრალოდ დაშორება რომ გამეკეთებინა ყველაფრისთვის მარვენა და მარცხენა მხარეს. ჩემს ცსს-ს თუ გადახედავ მიხვდების-->
+        <h2 class="section-Header"> ფერები</h2>
+
+        <!--
+            გამოიყენე ინლაინც სიესესი 
+
+            პირველ პარაგრაფს მიანიჭე ფერი rgb ს გამოყენებით, 
+            მეორე პარაგრაფს კი hex-ით მაგ: #ff0000 
+        -->
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum deserunt, sequi nobis, architecto totam hic error aspernatur repellat adipisci odit blanditiis amet corporis illum sint aut corrupti, nostrum earum? Voluptas?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum deserunt, sequi nobis, architecto totam hic error aspernatur repellat adipisci odit blanditiis amet corporis illum sint aut corrupti, nostrum earum? Voluptas?</p>
+       
+        <hr>
+        <h2 class="section-Header"> ფონები</h2>
+        
+         <!-- 
+            #div1 {
+                ფონის ფერი : blueviolet;
+                სიმაღლე: 300 პიქსელი
+            }
+            #div2 {
+                ფონის სურათი : url('https://media.mehrnews.com/d/2017/10/04/4/2595502.jpg');   ეს მნიშვნელობა მიანიჭე თვისებას
+                სიმაღლე: 300 პიქსელი
+            }
+            #div3 {
+                ფონის სურათი : url('https://media.mehrnews.com/d/2017/10/04/4/2595502.jpg');   ეს მნიშვნელობა მიანიჭე თვისებას
+                სიმაღლე: 300 პიქსელი
+                ფონს გამეორება: არა
+            }
+          -->
+
+
+        <div id="div1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+        </div>
+        <div id="div2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+        </div>
+        <div id="div3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit vel dignissimos suscipit velit, earum fugit doloremque consequuntur culpa voluptas quae, omnis soluta, harum quod voluptatum optio dolor ducimus itaque!</p>
+        </div>
+
+        <hr>
+        <h2 class="section-Header"> ჩარჩოები</h2>
+
+            <!-- 
+                დივს ატრიბუტად მიეცი აიდი square 
+                და აიდის სელექტორით გასტილე:   
+                    სიმაღლე         - 300პქს
+                    სიგანე           - 300პქს
+                    ფონის ფერი     - royalblue
+                    გაცენტრე        - (აქ გამოიყენე margin:auto)
+                    ჩარჩო           -> 5 პქსი წყვეტილი მწვანე 
+
+                    შემდეგ პადინგი მიეცი 50 პქს და დააკვირდი რა განსხვავება იქნება და ახსენი რატომ
+            -->
+
+            <div></div>
+
+        <hr>
+        <h2 class="section-Header">ტექსტი</h2>
+
+        <!-- 
+            h4 გასტილე
+                ტექსტის ზომა 30 პქს
+                ფერი #9dfc03
+                იყოს დახრილი
+                დეკორაცია ხაზი ქონდეს ქვემოთ გასმული
+
+            a გასტილე:
+                ფერი შავი
+                დეკორაცია არცერთი
+                როდესაც მაუსს მიიტან წითლდება
+                როცა დააჭერ ლურჯდება
+                რომ მიიტან წითლდებოდეს ნელა
+                მაგისსთვის გამოიყენე a{transition:0.3s}
+        --> 
+
+
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti placeat id voluptatibus eveniet quia quod tempora qui harum est praesentium inventore dicta, voluptatem, consequatur alias saepe necessitatibus veniam accusantium?</h4>
+
+            <a href="#">Here Goes The Link</a>
+
+        <hr>
+        <h2 class="section-Header">ცხრილები</h2>
+
+        <!-- 
+            გასტილე სათაურები:
+                ფერი წითელი
+                პადინგი 20პქს
+                ფონტის წონა(სიმუქე) ბოლდი
+            გასტილე დატა: (td)
+                პადინგი 20პქს
+                ფერი მწვანე
+            ცხრილი 
+                ბორდერი 30პქს 
+        -->
+
+        <table>
+            <tr>
+                <th>header 1</th>
+                <th>header 2</th>
+                <th>header 3</th>
+            </tr>
+            <tr>
+                <td>data 1.1</td>
+                <td>data 1.2</td>
+                <td>data 1.3</td>
+            </tr>
+            <tr>
+                <td>data 2.1</td>
+                <td>data 2.2</td>
+                <td>data 2.3</td>
+            </tr>
+        </table>
+        <hr>
+        <h2 class="section-Header">დისპლეი თვისება</h2>
+
+        <!--
+            figure1 კონტეინერს გაუწერე შემდეგი სტილი:
+                ფონის ფერი წითელი:
+                სიმაღლე 500პქს
+                სიგანე 500პქს
+                
+                შეამოწმე ბბრაუზერში როგორ გამოჩნდება და მერე დისპლეიში მიეცი none
+                შემდეგ დისპლეიში მიეცი block
+            figure2:
+                ფონის ფერი ლურჯი
+                სიგრძე 400პქს სიგანე ეკრანის 40%
+            figure3:
+                ფონის ფერი მწვანე
+                სიგრძე 450პქს სიგანე 50%
+
+            ფიგურა 2 და ფიგურა 3 განათავსე ერთ ხაზზე. დისპლეი თვისების გამოყენებით
+        -->
+
+        <div class="figure1"></div>
+        <div class="figure2"></div>
+        <div class="figure3"></div>
+        <hr>
+        <h2 class="section-Header">ოვერფლოუ</h2>
+
+        <!-- 
+        textContainer1 გასტილე შემდეგნაირად:
+            სიმაღლე 100პქს
+            ფონის ფერი ყვითელი
+            სიგანე 400პქს
+            რაც არ ჩაეტევა კონტეინერში გაქრეს
+        textContainer2:
+            სიმაღლე 100პქს
+            ფონის ფერი მწვანე
+            სიგანე 400პქს
+            რაც არ ეტევა გაუჩნდეს სქროლი
+
+        მინიშნება: გამოიყენე ოვერფლოუ თვისება
+         -->
+
+        <div id="textContainer1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+        </div>
+        <div id="textContainer2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis modi doloribus totam? Eligendi blanditiis error excepturi velit magnam incidunt. Autem nihil accusantium nobis quis aliquam perferendis dolorum itaque suscipit.</p>
+        </div>
+
+        <hr>
+        <h2 class="section-Header">ფლოატი და ქლიარი</h2>
+        <!-- 
+            დივი გასტილე შემდეგაირად ინლაინ cssის გამოყენებით
+            სიგანე 400პქს სიმაღლე 400პქს ფონის ფერი ლურჯი
+            დაყენდეს მარჯვნივ ფლოატის გამოყენებით
+         -->
+        <div></div>
+        <hr>
+        <h2 class="section-Header">გაცენტვრა მაგინ აუტო დივებზე</h2>
+        <!-- 
+         ეს დივი:
+            ფონის ფერი რაც გინდა ჰექსით
+            სიმაღლე/სიგანე 400პქსს
+            დაყენდეს შუაში მარგინისთვის მნიშველობის მინიჭებით
+            და გახადე გამჭირვალეე გამოყენე opacity თვისება
+         -->
+
+        <div></div>
+    </div>
+
+
+
+</body>
+</html>
