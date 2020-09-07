@@ -1,0 +1,116 @@
+/* common-css*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+a{
+    text-decoration:none;
+    color: black;
+    transition: 0.4s;
+}
+
+li{
+    list-style-type: none;
+}
+#centeredContainer {
+    width: 90%;
+    margin: auto;
+
+}
+
+/*header*/ 
+header {
+    background-color: rgb(12, 60,96);
+    height: 89px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+#logowrapper{
+display: inline-block;
+}
+#logowrapper a {
+
+}
+#logowrapper h2 {
+    font: normal normal normal 22px/1.4em raleway, sans-serif;
+font-size: 22px;
+color: #ffffff;
+margin: 0%; /*აქ სპანის ბრალი იყო ჩემთანაც ჩამოიწია h2*/
+text-decoration: none;
+}
+#logowrapper h2 span{
+    color: #7DCADA;
+}
+.mainNav {
+ float: right;
+}
+.mainNav ul {
+    margin-top: 7px;
+}
+.mainNav li {
+display: inline-block;
+font: normal normal normal 13px/1.4em 'open sans', sans-serif;
+padding:0 20px ;
+}
+.mainNav a{
+    color: #ffffff;
+}
+.mainNav a:hover {
+    color: #7DCADA;
+    text-decoration: none;
+}
+
+/*backgroundsec(x)tion*/ 
+.backgroundsection{
+    background-image: url(https://1stwebdesigner.com/wp-content/uploads/2019/07/css-background-effects-thumb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #0c3c60;
+}
+.backgroundsection div{
+    background-color: rgba(255, 255,255, 0.7);
+    padding: 20px;
+    position: relative;
+    top: 370px;
+}
+.backgroundsection p{
+    font: normal normal normal 16px raleway, sans-serif;
+}
+.backgroundsection h1 {
+    font: normal normal normal 40px raleway, sans-serif;
+}
+/*box sec(x)tion> */
+ .boxsection{
+     text-align: center;
+     padding: 50px 0px;
+     box-sizing: border-box;
+ }
+ .box{
+     background-color: rgb(12, 60, 96);
+  width: 300px;
+  height: 350px;
+  padding:30px; 
+  box-sizing: border-box;
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 10px;
+ }
+ .box h1{
+
+ }
+ .box p{
+
+ }
+ .box button {
+background-color:#39729B;
+padding: 5px 20px;
+transition: 0.4s;
+margin-top: 40px;
+ }
+ .box button:hover{
+     background-color: rgb(99,158,201);
+ } /*h2-ის ხაზის გაუქმება არ დამავიწყდეს*/
