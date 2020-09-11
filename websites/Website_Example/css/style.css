@@ -1,0 +1,233 @@
+
+/* Common - Css*/
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    transition: 0.4s;
+}
+li{
+    list-style-type: none;
+}
+
+.centeredContainer{
+    width: 60%;
+    margin:auto;
+}
+
+
+
+/* Header */
+
+header{
+    height: 89px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+footer, header{
+    background-color: rgb(12, 60, 96);
+}
+
+
+
+#logoWrapper{
+    display: inline-block;
+}
+#logoWrapper h2{
+    font: normal normal normal 22px/1.4em raleway,sans-serif;
+    margin: 0px;
+    color: #FFFFFF;
+}
+#logoWrapper h2 span{
+    color:#7DCADA;
+}
+.mainNav{
+    float: right;
+}
+.mainNav ul{
+    margin-top: 7px;
+}
+.mainNav li{
+    display: inline-block;
+    font: normal normal normal 13px/1.4em 'open sans',sans-serif;
+    padding: 0 10px;
+    
+}
+.mainNav a{
+    color:#FFFFFF;
+}
+.mainNav a:hover{
+    color:rgb(151, 222, 236);
+    text-decoration: none;
+}
+
+
+/* BackgroundSection */
+
+.backgroundSection{
+    background-image: url("https://1stwebdesigner.com/wp-content/uploads/2019/07/css-background-effects-thumb.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #0C3C60;
+}
+
+.backgroundSection div{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    position: relative;
+    top:500px;
+}
+
+.backgroundSection p{
+    font:  18px raleway,sans-serif;
+}
+
+.backgroundSection h1{
+    font: 60px raleway,sans-serif;
+}
+
+/* Box Section*/
+
+
+.boxSection{
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.box{
+    background-color: rgb(12, 60, 96);
+    width: 300px;
+    height: 350px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+}
+.box button{
+    background-color: rgba(57, 114, 155, 1);
+    padding: 5px 20px;
+    transition: 0.4s;
+    margin-top: 40px;
+}
+.box button:hover{
+    background-color: rgb(99, 158, 201);
+}
+
+
+/* footer */
+
+footer{
+    padding: 40px 10px;
+    color:white;
+}
+
+
+
+footer p{
+    display: inline-block;
+}
+
+footer li{
+    display: inline-block;
+    margin: 0 5px;
+}
+footer ul{
+    float: right;
+}
+
+footer a{
+    color:white;
+}
+footer a:hover{
+    color: rgb(99, 158, 201);
+}
+
+
+/* about */
+
+
+.aboutSection{
+    padding: 40px 0px;
+    background-color: rgb(209, 224, 235);
+    text-align: center;
+    font: raleway,sans-serif;
+}
+.aboutSection h1,.aboutSection p,.aboutSection button{
+    padding: 5px 0px;
+}
+.aboutSection h1{
+    margin-bottom: 20px;
+
+    font-size: 60px;
+}
+.aboutSection p{
+    font-size: 14px;
+}
+.aboutSection button{
+    margin: 30px 0px;
+    background-color:  rgb(12, 60, 96);
+    padding: 10px 30px;
+    color:white;
+    transition: 0.4s;
+}
+.aboutSection button:hover{
+    background-color: white;
+    color: rgb(12, 60, 96);
+}
+
+/* Contact us */
+
+.contactUs{
+    background-color:  rgb(12, 60, 96);
+    padding: 40px;
+    color:white;
+}
+
+.contactUs h1{
+    text-align: center;
+}
+.contactUs iframe,.formContainer{
+    width: 45%;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.formContainer form{
+    
+}
+.formContainer h6{
+    text-align: center;
+}
+.text-input{
+    margin: 15px 0;
+}
+.text-input label{
+    display: block;
+}
+.text-input input{
+    min-width: 230px;
+    width: 100%;
+}
+.text-input textarea{
+    min-width: 230px;
+    width: 100%;
+}
+
+.text-input [type="submit"]{
+    min-width: 50px;
+    width: 75px;
+    background-color: rgb(99, 158, 201);
+    color:black;
+    float: right;
+}
