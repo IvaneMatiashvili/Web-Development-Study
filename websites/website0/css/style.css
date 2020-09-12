@@ -98,12 +98,6 @@ padding:0 20px ;
     color: #ffffff;
     margin: 0 10px;
  }
- .box h1{
-
- }
- .box p{
-
- }
  .box button {
 background-color:#39729B;
 padding: 5px 20px;
@@ -112,4 +106,105 @@ margin-top: 40px;
  }
  .box button:hover{
      background-color: rgb(99,158,201);
- } /*h2-ის ხაზის გაუქმება არ დამავიწყდეს*/
+ } 
+ /* footer */
+ footer{
+     background-color:rgb(12, 60, 96) ;
+     padding: 40px 20px;
+     color: white;
+
+ }
+ footer p{
+     display: inline-block;
+     margin: 0mm 0px 0px 60px;
+
+ }
+ footer li{
+     display: inline-block;
+     margin: 0px 5px;
+
+ }
+
+ footer ul{
+     float: right;
+
+ }
+footer a {
+    color: white;
+}
+footer a:hover{
+    color: rgb(99, 158, 201);
+}
+
+/* about */
+
+.aboutSection{
+    padding: 40px 0px;
+    background-color: rgb(209, 224, 235);
+    text-align: center;
+    font: raleway,sans-serif;
+}
+.aboutSection h1,.aboutSection p,.aboutSection button{
+    padding: 5px 0px;
+}
+.aboutSection h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.aboutSection p{
+    font-size: 14px;
+}
+.aboutSection button{
+    margin: 30px 0px;
+    background-color:  rgb(12, 60, 96);
+    padding: 10px 30px;
+    color:white;
+    transition: 0.4s;
+}
+.aboutSection button:hover{
+    background-color: white;
+    color: rgb(12, 60, 96);
+}
+
+/* Contact us */
+.contactUs{
+    background-color:  rgb(12, 60, 96);
+    padding: 40px;
+    color:white;
+}
+
+.contactUs h1{
+    text-align: center;
+}
+.contactUs iframe,.formContainer{
+    width: 40%;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+}
+.formContainer h6{
+    text-align: center;
+}
+/* text-input */
+.text-input{
+    margin: 10px 0px;
+}
+.text-input label{
+    display: block;
+}
+.text-input input{
+    min-width: 230px;
+    width: 100%;
+}
+.text-input textarea{
+    min-width: 230px;
+    width: 100%;
+}
+
+.text-input [type="submit"]{
+    min-width: 50px;
+    width: 70px;
+    background-color: rgb(99, 158, 201);
+    color:black;
+    float: right;
+}
