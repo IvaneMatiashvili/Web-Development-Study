@@ -15,53 +15,36 @@ body{
     background-color: black;
     padding: 0% 2%;
 }
-
+a{
+    text-decoration: none;
+}
 /* Header */
 
 header{
     background-color: black;
-    display: flex; /*ეს რას აკეთებს თუ იაზრებ*/
-    box-sizing: border-box;
-    line-height: 1.5; /* ეს არ არის საჭიირო */
     color: #ffffff;
-    margin-bottom: 8%;
 }
 #logoWrapper{
-    position: relative; 
-    top: 50px ; 
-    right: 160px;    
+    display: inline-block;
 }
 
 .mainNav {
     float: right;
 }
 .mainNav ul{
-    /* position: relative; ესეც ზედმეტია */
     display: inline-block;
     font-size: 18px;
-    line-height: 1.5; /* ეს არ არის საჭიირო */
     font-family: 'Archivo Narrow',sans-serif;
-    font-weight: 400;/*ესეც ზედმეტია*/
-    font-style: normal; /*ესეც ზედმეტია*/
-    box-sizing: border-box; /*ესეც ზედმეტია*/
-    color: #ffffff; /*ესეც ზედმეტია*/
 }
 
 .mainNav li{
-    box-sizing: border-box; /*ესეც ზედმეტია*/
     display: inline-block;
     padding: 0 10px;
-    /* position: relative;  ქვემოთ ჩამოწევა რათ
-    top: 10px; 
-    left:170px;  */
-    text-decoration: none; /*ზედმეტია*/
+    position: relative;  
+    top: 15px; 
     font-size: 15px;
-    /* font-weight: 400;    
-    font-style: normal;
-    opacity: 1; */ /*ზედმეტია*/
-   margin-bottom: 80px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+    margin-bottom: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .mainNav a{
     color:#FFFFFF;
@@ -76,62 +59,42 @@ header{
 /* footer */
 
 footer{
-     /*ზედმეტია ყველაფერი*/
-    background-color: black;
-    padding-bottom: 4%;
-    box-sizing: border-box;
-    margin-bottom: 4%;
+    margin: 50px 0px;
 }
 
 
 footer p{
-    
     font-size: 18px;
-    
     font-family: 'Archivo Narrow',sans-serif;
-    /*ზედეტია*/
-    /* box-sizing: border-box; */
-    /* line-height: 1.5; */
-    /* font-weight: 400; */
-    /* font-style: normal; */
     color: white;
-
-
-    position: absolute; 
-    left: 44.75% ; 
-    margin-bottom: 5%;
-    /*სხვანაირად გაცენტრვას გირჩევდი*/
-    /*text-align:center; <- beka*/
- 
+    margin-bottom: 50px;
+    text-align:center;
 }
 
 
 footer li{
-    box-sizing: border-box;/*  ზედმეტია */ 
     display: inline-block;
-    margin: 0 5px;
-    margin: 10px; /*ეს ორჯერ რო გიწერია მხოლოდ ბოლო რჩება*/
+    margin: 10px; 
     font-size: 18px;
-    line-height: 1.5;/*  ზედმეტია */ 
     font-family: 'Archivo Narrow',sans-serif;
-    font-weight: 400;/*  ზედმეტია */ 
-    font-style: normal;/*  ზედმეტია */ 
-    /*აქაც ul ს რომ ტექს ელაინი გაგეწერა საკმარისი იყო*/
-    position: relative; 
-    left: 42%; 
-    bottom: 10px;
 }
 
+footer ul{
+    text-align:center;
+}
+
+
 footer a{
-    box-sizing: border-box; /*ზედმეტია*/
     color:#cacaca;
-    position: relative; left: 50%; 
-    /*დისფლეი ბლოკი ტექსტ ელაინ ცენტერი*/
+    
+
+
 }
 
 #Terms {
-    position: relative; top: 50px;
-    /*ანალოგიური აქ*/
+    display: block;
+    text-align: center;
+    text-decoration: underline;
 }
 
 
@@ -143,44 +106,28 @@ footer a:hover{
 
 
 .aboutSection{
-    padding-top: 1% ;
-    margin-top: -8%;
-    margin-bottom: 8%;
-    display: block;
-    box-sizing: border-box;
     background-image: url("https://imagery.zoogletools.com/u/283782/e8ed52e7ec7b9da7664f588ac420000927e93f2f/original/bird.jpg/!!/b%3AW1siZXh0cmFjdCIseyJsZWZ0IjowLCJ0b3AiOjEyMSwid2lkdGgiOjE5OTYsImhlaWdodCI6MTQ2OX1dLFsicmVzaXplIiwxNjAwXSxbIm1heCJdLFsid2UiXV0%3D.jpg"); 
-    /* opacity: 0.5; */
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 160%; /*ქვემოთ გიგანტური დაშორებაა მის გამო აქვს*/
     color: white;
+    padding: 100px 0px;
 }
 
 
 .aboutSection h1 {
-    box-sizing: border-box; /*ზედმეტია*/
-    text-align: left; /*ზედმეტია*/
     font-weight: 400;
     font-style: oblique;
     line-height: 1.2;
     font-size: 40px;
     font-family:"sofia";
-    /*რავი*/
-    margin-top: -1%;
-    margin-bottom: 4%;
+
 }
 
-
  .aboutSection p{
-    text-align: left; /*ზედმეტია*/
-    box-sizing: border-box; /*ზედმეტია*/
     line-height: 1.5;
     display: block;
     color: #ffffff;
     font-size: 17px;
-    line-height: 1.5; /*ზედმეტია*/
     font-family: 'Archivo Narrow',sans-serif;
-    font-weight: 400; /*ზედმეტია*/
-    font-style: normal;/*ზედმეტია*/
-    background-color: rgba(0, 0, 0, 0.363); /*ზედმეტია*/
+    padding:20px 0;
 }
