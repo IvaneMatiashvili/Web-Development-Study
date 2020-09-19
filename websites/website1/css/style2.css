@@ -1,0 +1,76 @@
+/* formSection */
+.formSection{
+
+    background-image: url("https://imagery.zoogletools.com/u/283782/e8ed52e7ec7b9da7664f588ac420000927e93f2f/original/bird.jpg/!!/b%3AW1siZXh0cmFjdCIseyJsZWZ0IjowLCJ0b3AiOjEyMSwid2lkdGgiOjE5OTYsImhlaWdodCI6MTQ2OX1dLFsicmVzaXplIiwxNjAwXSxbIm1heCJdLFsid2UiXV0%3D.jpg"); 
+    width: 100%;
+    color: white;
+    background-size: cover;
+    padding-bottom: 40px ;
+    margin-bottom: 20PX;
+}
+
+
+.formSection h1 {
+    font-style: oblique;
+    font-size: 40px;
+    font-family:"sofia";
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+.formSection ul {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.formSection li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 18px;
+    font-family: 'Archivo Narrow',sans-serif;
+}
+.formSection a{
+    color:#cacaca; 
+    text-align: center;
+}
+.formSection a:hover {
+    color: rgba(155,155,155,0.6);
+}
+
+/* text-input */
+.text-input{
+    margin: 10px 0px;
+}
+.text-input label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.text-input input{
+    min-width: 230px;
+    width: 600px;
+    height:50px ;
+}
+.text-input textarea{
+    min-width: 230px;
+    width: 700px;
+    height: 200px ;
+}
+
+.text-input [type="submit"]{
+    min-width: 50px;
+    width: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9b9b9b;
+    background-color: transparent;
+    border: 1px solid #fab9b9;
+    height: 40px;
+    transition: 0.4s;
+
+}
+.text-input [type="submit"]:hover {
+    color: rgba(255,255,255,0.8);
+    background-color: #9b9b9b;
+}

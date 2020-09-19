@@ -8,10 +8,7 @@
 }
 
 .eventSection h1 {
-    text-align: left;
-    font-weight: 400;
     font-style: oblique;
-    line-height: 1.2;
     font-size: 40px;
     font-family:"sofia";
     padding-top: 50px;
@@ -20,72 +17,66 @@
     
 .eventSection h2{
     margin-bottom: 20px;
+    font-size: 18px;
 }
-.date {
-    /* background-color: tomato; */
-    /* margin-left: 10%; */
-    /* padding-bottom: 1%; */
-     /* margin-right:-50%; */
+.dateWrapper {
+    display: inline-block;
+
 }
 
-.calendarone {
-    margin-right: 90%;
+.calendar {
+   width: 100px;
+   display: inline-block;
+   vertical-align: top;
 }
 
-.calendaronemonth {
+.calendarmonth {
     background-color:#aaa;
     padding-bottom: 6%;
     padding-top: 5%;
     border: solid;
     border-radius: 5px 5px 0px 0px;
-    border-width: 1px 1px;
+    border-width: 1px;
     border-color: #aaa;
 }
-.calendarone h3 {
+.calendar h3 {
     font-size: 18px;
     background-color:#aaa;
-    background-size: 100%;
-    /* box-sizing: border-box; */
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-   line-height: 1.2; 
 }
 
-.calendaroneday {
-       background-color: white;
-       /* padding-bottom: 10%; */
-       border: solid;
-       border-radius: 0px 0px 5px 5px;
-       border-width: 1px 1px;
-       border-color: #aaa;
+.calendarday {
+   background-color: white;
+   border: solid;
+   border-radius: 0px 0px 5px 5px;
+   border-width: 1px;
+   border-color: #aaa;
 }
 
-.calendaroneday h2 { 
-     font-size: 40px; 
-     color:#aaa; 
+.calendarday h2 { 
+    font-size: 40px; 
+    color:#aaa; 
     background-size: 100%;
-    /* box-sizing: border-box; */
     border-radius: 2px 2px ;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-   line-height: 1.2; 
  } 
 
  .informationarea {
-      margin-right: -960%;
-      margin-top: -156px;
-    padding-left: 160%;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    display: inline-block;
+    width:70% ;
+    margin-left: 40px;
  }
 
  .informationarea h1 {
-    font-weight: 400;
     font-style: oblique;
     font-size: 26px;
     font-family: Helvetica, Arial, sans-serif;
-   margin-bottom: -0.02px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
  }
  .informationarea a{
      color: #cacaca;
@@ -99,19 +90,18 @@
  }
    
  #friday {
-    padding-left: 4% ;
+    padding-left: 40px ;
     font-family: Helvetica, Arial, sans-serif;
     font-style: oblique;
     font-size: 18px;
-    margin-bottom: -15px;
  }
 
  .map{
-    padding-left: 2% ;
+    padding-left: 40px ;
  }
 
  .share {
-    font-size: 17px;
+    font-size: 17px; 
  }
  .material-icons{
      font-size: 60px;
@@ -129,6 +119,7 @@
 .shareSection a{
     display: inline-block;
     margin-bottom: 20px;
+    vertical-align: middle;
 }
 
 .Checkback{
