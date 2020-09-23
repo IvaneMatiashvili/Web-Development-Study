@@ -1,0 +1,66 @@
+.centeredContainerTwo {
+    width: 90%;
+    margin:auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.centeredContainerTwo img {
+    margin: 5px;
+    padding: 5px ;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.imageSection {
+    width: 100%;
+    background-color: #202020;
+    background-size: cover;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+
+.imageSection h1 {
+    font-style: oblique;
+    font-size: 40px;
+    font-family:"sofia";
+    padding-top: 50px;
+    margin-bottom: 40px;
+    color: white;
+}
+ 
+
+.imageContainerOne {
+display: flex;
+flex-direction: column;
+}
+
+
+.imageContainerTwo {
+    display: flex;
+    flex-direction: column;
+} 
+
+.imageContainerThree {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.shareSection  {
+    text-align: center;
+    color: #cacaca;
+   padding-top: 20px;
+   margin-top: 20px;
+}
+
+.shareSection a {
+    text-align: center;
+    color: #cacaca;
+    text-decoration: underline;
+}
+
+
