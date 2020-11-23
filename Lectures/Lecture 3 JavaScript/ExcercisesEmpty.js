@@ -19,18 +19,6 @@
     შექმენი null ტიპის ცვლადი შექმნი undifined ტიპის ცვლადი და ორივ დაბეჭდე.
 */
 
-   let number1=9;
-   let number2=7.7;
-   let greeting="Hello";
-   let cuteAnimal="Black cat";
-
-   let sum1=number1+number2;
-   console.log("sum1= " + sum1);
-   console.log(greeting + " " + cuteAnimal);
-
-   let boomnull=null;
-   let rodisgabrwyindebaiveria;
-
 
 
 
@@ -53,13 +41,6 @@
     წინა წარწერა გამოიტანე თავიდან ცვლადების ახალი მნიშვნელობბით.
 */
 
-    let name="tamuna";
-    let hobby="programming";
-    console.log (name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
-    name ="obama";
-    hobby="Presidenting";
-    console.log (name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
-
 
 
 
@@ -76,11 +57,6 @@
 ცვლადების გამოყენებით გამოიტანე ეკრანზე შემდგი ორი წარწერა  "17MyText" "MyText98"
 
 */
-let num1=9;
-let num2=8;
-let text1="MyText"
-console.log(num1+num2+"MyText");
-console.log( text1 + num1 + num2);
 
 
 
@@ -96,28 +72,6 @@ console.log( text1 + num1 + num2);
 
     ეს გააკეთე სასმივე ციკლის გამოყენებით. (ანუ სამნაირად)ს
 */
-for(var x=1; x<=51; ++x)
-console.log(x);
-
-var x1=1;
-do {
-    console.log(x1);
-    ++x1;
-}
-while (x1<=51)
-
-var x2=1;
-while (x2<=51){
-    console.log(x2);
-    ++x2;
-}
-
-
-
-
-
-
-
 // #5
 
 // answer
@@ -145,5 +99,3 @@ while (x2<=51){
 "ყველა დავალება წარმატბითაა შესრულებული"
 
 */
-
-alert ("ყველა დავალება წარმატებითაა შესრულებული");
