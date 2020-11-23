@@ -1,8 +1,3 @@
-//#1//
-
-
-// answer
-
 
 // #1
 /*
@@ -19,27 +14,24 @@
     შექმენი null ტიპის ცვლადი შექმნი undifined ტიპის ცვლადი და ორივ დაბეჭდე.
 */
 
-   let number1=9;
-   let number2=7.7;
-   let greeting="Hello";
-   let cuteAnimal="Black cat";
+let number1 = 9;
+let number2 = 7.7;
+let greeting = "Hello";
+let cuteAnimal = "Black cat";
 
-   let sum1=number1+number2;
-   console.log("sum1= " + sum1);
-   console.log(greeting + " " + cuteAnimal);
+let sum1 = number1 + number2;
+console.log("sum1= " + sum1);
+console.log(greeting + " " + cuteAnimal);
 
-   let boomnull=null;
-   let rodisgabrwyindebaiveria;
+let boomnull = null;
+let rodisgabrwyindebaiveria; // undefined
+
+let cvladi = "Fredie "
+console.log(`My name is ${cvladi}`)
+console.log(`i am ${2 + 20} years old, my name is ${cvladi} `)
 
 
 
-
-
-
-
-//#2//
-
-// answer
 
 // #2
 /*
@@ -53,12 +45,12 @@
     წინა წარწერა გამოიტანე თავიდან ცვლადების ახალი მნიშვნელობბით.
 */
 
-    let name="tamuna";
-    let hobby="programming";
-    console.log (name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
-    name ="obama";
-    hobby="Presidenting";
-    console.log (name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
+let name = "tamuna";
+let hobby = "programming";
+console.log(name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
+name = "obama";
+hobby = "Presidenting";
+console.log(name + " loves " + hobby + ", she hopes to become very good at " + hobby + ". " + name + " is a good girl. " + hobby + " is for cool kids.");
 
 
 
@@ -66,9 +58,6 @@
 
 
 
-//#3//
-
-// answer
 
 // #3
 /*
@@ -76,38 +65,35 @@
 ცვლადების გამოყენებით გამოიტანე ეკრანზე შემდგი ორი წარწერა  "17MyText" "MyText98"
 
 */
-let num1=9;
-let num2=8;
-let text1="MyText"
-console.log(num1+num2+"MyText");
-console.log( text1 + num1 + num2);
+let num1 = 9;
+let num2 = 8;
+let text1 = "MyText"
+console.log(num1 + num2 + "MyText");
+console.log(text1 + num1 + num2);
 
 
 
 
-//#4//
 
-
-// answer
 
 // #4
 /*
     ეკრანზე დამიბეჭდე რიცხვები 1 დან 50ის ჩათვლით.
 
-    ეს გააკეთე სასმივე ციკლის გამოყენებით. (ანუ სამნაირად)ს
+    ეს გააკეთე სასმივე ციკლის გამოყენებით. (ანუ სამნაირად)
 */
-for(var x=1; x<=51; ++x)
-console.log(x);
-
-var x1=1;
+for (var x = 1; x <= 50; ++x) 
+    console.log(x) ;
+    
+var x1 = 1;
 do {
     console.log(x1);
     ++x1;
 }
-while (x1<=51)
+while (x1 < 51)
 
-var x2=1;
-while (x2<=51){
+var x2 = 1;
+while (x2 < 51) {
     console.log(x2);
     ++x2;
 }
@@ -118,9 +104,7 @@ while (x2<=51){
 
 
 
-// #5
 
-// answer
 
 // #5
 /*
@@ -130,10 +114,6 @@ while (x2<=51){
 
 */
 
-
-//#6//
-
-// answer
 
 
 
@@ -146,4 +126,4 @@ while (x2<=51){
 
 */
 
-alert ("ყველა დავალება წარმატებითაა შესრულებული");
+// alert("ყველა დავალება წარმატებითაა შესრულებული");

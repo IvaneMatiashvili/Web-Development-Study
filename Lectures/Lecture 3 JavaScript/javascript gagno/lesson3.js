@@ -88,14 +88,3 @@ var result = giveMeNashti_Add7(100,91);
 console.log(result)
 
 
-
-
-
-
-
-
-
-
-
-
-
