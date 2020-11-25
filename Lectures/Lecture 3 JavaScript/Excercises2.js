@@ -3,40 +3,35 @@
 function write(content) {
     console.log(content);
 }
-
+function space() {
+    console.log()
+    console.log("////////////////////////////////////////")
+    console.log("////////////////////////////////////////")
+    console.log("////////////////////////////////////////")
+    console.log()
+}
 
 // #1
-
-
-// answer
-
-
-//console.log(myString[]);
 /*
     შექმენი ახალი ცვლადდი myString და მიანიჭე მას მნიშვნელობა "Pablo Eskobar was a realy nice guy, When I grow up I want to just be like him!"
 
     გამოიტანე კონსოლში ამ სტრინგის ზომა (სიმბოლოების რაოდენობა);
     პირველი სიმბოლო, მე-9 სიმბოლო.
     ციკლის გამოყენებით ჩამოწერე სტრინგში შემავვალითითოეული სიმბოლო.?
-
 */
 
-let  myString="Pablo Eskobar was a realy nice guy, When I grow up I want to just be like him!";
-    console.log(myString.length);
-    console.log(myString[0]);
-    console.log(myString[8]);
-    
-    for(let i=0; i<myString.length; ++i){
-        console.log(myString[i]);
-    }
+let myString = "Pablo Eskobar was a realy nice guy, When I grow up I want to just be like him!";
+console.log(myString.length);
+console.log(myString[0]);
+console.log(myString[8]);
 
+for (let i = 0; i < myString.length; ++i) {
+    console.log(myString[i]);
+}
 
+space()
 
 // #2
-
-// answer
-
-
 /*  
     შექმენი ცვლადი animal და მიანიჭე მას რაიმე მნიშვნლობა.
     სვიჩის საშუალებით შეადარე ის კატას, ძაღლს, ძროხას, მგელს, ზარმაცას და მელიას.
@@ -44,20 +39,18 @@ let  myString="Pablo Eskobar was a realy nice guy, When I grow up I want to just
     თუ ცხოველი ვერ იპოვა დეფალტად გამოატანინე შემდეგი ტექტი "old MCdonads had a farm, deliav ranuni"
 */
 
-let animal= "monkey";
-switch(animal){
-   case "monkey" : console.log("Mooooooo"); break;
-   default: console.log("old MCdonads had a farm, deliav ranuni");break;
+let animal = "monkey";
+switch (animal) {
+    case "monkey":
+        console.log("Mooooooo");
+        break;
+    default:
+        console.log("old MCdonads had a farm, deliav ranuni");
+        break;
 }
-
+space()
 
 // #3
-
-// answer
-
-
-
-
 /*
     შექმნი მასივი myArray და მასში ჩაყარე შმდეგი მონაცემები: 1,"text","koba",null,"popkorni",79,true.
     კონსოლში გამოიტანე მასივის ზომა (მასში არსსბულელემენტთა რაოდენობა);
@@ -65,20 +58,14 @@ switch(animal){
 
 */
 
-let array=[1,"text","koba",null,"popkorni",79,true ];
-    console.log(array.length);
-for(let  x = 0; x < array.length; x++){
-    console.log( array[x] )
+let array = [1, "text", "koba", null, "popkorni", 79, true];
+console.log(array.length);
+for (let x = 0; x < array.length; x++) {
+    console.log(array[x])
 }
-
+space()
 
 // #4
-
-// answer
-
-
-
-
 
 /*
     შექმენი უპარამეტრო ფუნქცია სახელად somexiPhrase და მისი გამოძახებით კონსოლში გამოიტანოს ტექსტი "Vaaaax Cavaataneem!".
@@ -87,24 +74,31 @@ for(let  x = 0; x < array.length; x++){
     შექმენი ახალი ცვლადი და ფუნქციის საშუალებით მიანიჭე 15 ის 9ზე გაყოფით მიღებული ნაშთი. 
     დამიწერე ამ ცვლადის მნიშვნელობა კონსოლში
 */
-function somexiPhrase(){
+function somexiPhrase() {
     console.log("Vaaaax Cavaataneem!");
 }
-    somexiPhrase();
+somexiPhrase();
 
-function getWhatsLeft(a,b){
-    return a%b;
+let container = somexiPhrase;
+// იგივეა რაც
+// const myF = () => {
+//     console.log("Vaaaax Cavaataneem!");
+// }
+container()
+
+console.log("container")
+// console.log(container)
+
+
+
+function getWhatsLeft(a, b) {
+    return a % b;
 }
 
-write(getWhatsLeft(15,9));
+write(getWhatsLeft(15, 9));
 
-
+space()
 // #5
-// answer
-
-
-
-
 /*
     შექმენი პარამეტრიანი ფუნქცია რომელსაც თუ გადავცემთ რაიმე რიცხვს დაგვიბრუნებს მის კვადრატს.
     შექმენი პარამეტრიანი ფუნქცია რომელსაც თუ გადავცემთ მართკუთხა სამკუთხედის კათეტების სიგრძეებს დაგვიბრუნებს სსამკუთხედის ფართობს.
@@ -113,33 +107,31 @@ write(getWhatsLeft(15,9));
 */
 
 
-function Parametricfunction1(a){
-    return (a*a)
+function Parametricfunction1(a) {
+    return (a * a)
 }
 
-function Parametricfunction2 (a,b){
-    return ((a*b)/2);
+function Parametricfunction2(a, b) {
+    return ((a * b) / 2);
 }
 
-function Parametricfunction3 (a,b){
-    var c= (a*a)+(b*b)
+function Parametricfunction3(a, b) {
+    var c = Math.pow(a,2) + (b * b)   
     return Math.sqrt(c);
 }
-    
 
-    write(Parametricfunction1(4));
-    write(Parametricfunction2 (5,7));
-    write(Parametricfunction3 (8,6));
-    
-    // #6
-// answer
+let str = "" + Parametricfunction1(4) + " " + Parametricfunction2(5, 7);
+let str2 = `${Parametricfunction1(4)} ${Parametricfunction2(5, 7)} ${Parametricfunction3(8, 6)}`
 
-
+write(Parametricfunction1(4));
+write(Parametricfunction2(5, 7));
+write(Parametricfunction3(8, 6));
+write(`${Parametricfunction1(4)} ${Parametricfunction2(5, 7)} ${Parametricfunction3(8, 6)}`)
 
 
+space()
 
-
-
+// #6
 /*
         Try Catch
 
@@ -152,12 +144,6 @@ function Parametricfunction3 (a,b){
 
 
 // #6 
-// answer
-
-
-
-
-
 /*
 
     შექმენი ობიექტი blackCat
@@ -185,64 +171,68 @@ function Parametricfunction3 (a,b){
     დამიბეჭდე owner ის მონაცემები.
 */
 
-let blackCat={
-    eyeColor:"green", 
-    weight: 77, 
+let blackCat = {
+    eyeColor: "green",
+    weight: 77,
     name: "Hitler",
-    hungry : false,
+    hungry: false,
     favPhrace: "hiHitler",
     owner: {
-        name:"abdul",
+        name: "abdul",
         surname: "gandi",
     },
-    changeHungerState: function(){
-        this.hungry=!this.hungry;
+    changeHungerState: function () {
+        this.hungry = !this.hungry;
     },
-    gainWeight: function(x){
-        this.weight+=x;
+    gainWeight: function (x) {
+        this.weight += x;
     },
 
-    getName: function(){
+    getName: function () {
         return this.name;
     },
+    myPrint: function (){
+        console.log(this.hungry)
+    },
 
-    setPhrase: function(newPhrase){
-        this.favPhrace=newPhrase;
+    setPhrase: function (newPhrase) {
+        this.favPhrace = newPhrase;
     }
 
 }
+
+
 
 write(`name =${blackCat.name}`);
 write(`eyeColor =${blackCat.eyeColor}`);
 write(`weight = ${blackCat.weight}`);
 write(`hungry=${blackCat.hungry}`)
 write(`favPhrace =${blackCat.favPhrace}`);
-write(`owner = ${ blackCat.owner.name + " " + blackCat.owner.surname}`)
+write(`owner = ${blackCat.owner.name + " " + blackCat.owner.surname}`)
 
 blackCat.changeHungerState();
-write(`hungry =${ blackCat.hungry}`);
+write(`hungry =${blackCat.hungry}`);
 
 blackCat.gainWeight(3);
-write(`weight = ${ blackCat.weight}`);
+write(`weight = ${blackCat.weight}`);
 
 blackCat.gainWeight(-2);
 write(`weight = ${blackCat.weight}`);
 
 write(`name=${blackCat.getName()}`);
-
 blackCat.setPhrase("aiaiaia koko jambo ai aie");
-write(`favPhrace = ${ blackCat.favPhrace}`);
+write(`favPhrace = ${blackCat.favPhrace}`);
+
+
+space()
+blackCat.myPrint()
+
 
 
 // #7
-// answer
-
-
-
-
 /*
-    წინა ჯავასკრიპტ ობექტი გადაიყვანე ჯისონის ობიექტად და დამიბეჭდე.
-    
+    წინა ჯავასკრიპტ ობექტი გადაიყვანე ჯეისონის ობიექტად და დამიბეჭდე.
+
 */
 
 

@@ -1,0 +1,10 @@
+{
+    "name":"beka",
+    "surname":"badzagua",
+    "languages":["javascript","c#"],
+    "isCool" : true,
+    "dog":{
+        "name":"jeni",
+        "age":14
+    }
+}
