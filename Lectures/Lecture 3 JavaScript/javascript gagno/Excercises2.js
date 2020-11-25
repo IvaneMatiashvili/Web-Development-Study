@@ -57,10 +57,7 @@ for(var x = 0; x < array.length; x++){
 
 // #4
 
-function somexiPhrase(){
-    console.log("Vaaaax Cavaataneem!");
-}
-    somexiPhrase();
+
 
 function getWhatsLeft(a, b){
     return a%b;

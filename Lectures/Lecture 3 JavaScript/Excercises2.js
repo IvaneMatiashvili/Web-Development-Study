@@ -1,6 +1,12 @@
 
 
+function write(content) {
+    console.log(content);
+}
+
+
 // #1
+
 
 // answer
 
@@ -12,7 +18,17 @@
     გამოიტანე კონსოლში ამ სტრინგის ზომა (სიმბოლოების რაოდენობა);
     პირველი სიმბოლო, მე-9 სიმბოლო.
     ციკლის გამოყენებით ჩამოწერე სტრინგში შემავვალითითოეული სიმბოლო.?
+
 */
+
+let  myString="Pablo Eskobar was a realy nice guy, When I grow up I want to just be like him!";
+    console.log(myString.length);
+    console.log(myString[0]);
+    console.log(myString[8]);
+    
+    for(let i=0; i<myString.length; ++i){
+        console.log(myString[i]);
+    }
 
 
 
@@ -28,6 +44,11 @@
     თუ ცხოველი ვერ იპოვა დეფალტად გამოატანინე შემდეგი ტექტი "old MCdonads had a farm, deliav ranuni"
 */
 
+let animal= "monkey";
+switch(animal){
+   case "monkey" : console.log("Mooooooo"); break;
+   default: console.log("old MCdonads had a farm, deliav ranuni");break;
+}
 
 
 // #3
@@ -43,6 +64,12 @@
     კონსოლში დაბეჭდე მასივის თითოეული ელემნტი, ციკლის გამოყენბით.
 
 */
+
+let array=[1,"text","koba",null,"popkorni",79,true ];
+    console.log(array.length);
+for(let  x = 0; x < array.length; x++){
+    console.log( array[x] )
+}
 
 
 // #4
@@ -60,6 +87,16 @@
     შექმენი ახალი ცვლადი და ფუნქციის საშუალებით მიანიჭე 15 ის 9ზე გაყოფით მიღებული ნაშთი. 
     დამიწერე ამ ცვლადის მნიშვნელობა კონსოლში
 */
+function somexiPhrase(){
+    console.log("Vaaaax Cavaataneem!");
+}
+    somexiPhrase();
+
+function getWhatsLeft(a,b){
+    return a%b;
+}
+
+write(getWhatsLeft(15,9));
 
 
 // #5
@@ -76,7 +113,25 @@
 */
 
 
-// #6
+function Parametricfunction1(a){
+    return (a*a)
+}
+
+function Parametricfunction2 (a,b){
+    return ((a*b)/2);
+}
+
+function Parametricfunction3 (a,b){
+    var c= (a*a)+(b*b)
+    return Math.sqrt(c);
+}
+    
+
+    write(Parametricfunction1(4));
+    write(Parametricfunction2 (5,7));
+    write(Parametricfunction3 (8,6));
+    
+    // #6
 // answer
 
 
@@ -130,6 +185,53 @@
     დამიბეჭდე owner ის მონაცემები.
 */
 
+let blackCat={
+    eyeColor:"green", 
+    weight: 77, 
+    name: "Hitler",
+    hungry : false,
+    favPhrace: "hiHitler",
+    owner: {
+        name:"abdul",
+        surname: "gandi",
+    },
+    changeHungerState: function(){
+        this.hungry=!this.hungry;
+    },
+    gainWeight: function(x){
+        this.weight+=x;
+    },
+
+    getName: function(){
+        return this.name;
+    },
+
+    setPhrase: function(newPhrase){
+        this.favPhrace=newPhrase;
+    }
+
+}
+
+write(`name =${blackCat.name}`);
+write(`eyeColor =${blackCat.eyeColor}`);
+write(`weight = ${blackCat.weight}`);
+write(`hungry=${blackCat.hungry}`)
+write(`favPhrace =${blackCat.favPhrace}`);
+write(`owner = ${ blackCat.owner.name + " " + blackCat.owner.surname}`)
+
+blackCat.changeHungerState();
+write(`hungry =${ blackCat.hungry}`);
+
+blackCat.gainWeight(3);
+write(`weight = ${ blackCat.weight}`);
+
+blackCat.gainWeight(-2);
+write(`weight = ${blackCat.weight}`);
+
+write(`name=${blackCat.getName()}`);
+
+blackCat.setPhrase("aiaiaia koko jambo ai aie");
+write(`favPhrace = ${ blackCat.favPhrace}`);
 
 
 // #7

@@ -53,7 +53,7 @@ const myF2 = (x = 2, y = 3) => {
     return resut;
 }
 
-// write(myF2())
+ write(myF2())
 
 const fact = (x) => {
     if (x == 1) {
@@ -136,13 +136,13 @@ var car = {
     speed: 50,
     color: "red",
 
-    // methods
+
     print: function () {
-        // code here
+    
         console.log(`color = ${this.color} and speed = ${this.speed}`)
     },
     print2: () => {
-        // code here
+        
         console.log(` print 2 -> color = ${this.color} and speed = ${this.speed}`)
     }
 }
