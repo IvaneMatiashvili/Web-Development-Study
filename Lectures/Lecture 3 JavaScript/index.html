@@ -1,22 +1,79 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Page Title</title>
+
+    <style>
+        #square {
+            width: 400px;
+            height: 400px;
+            background-color: rebeccapurple;
+            margin: auto;
+            margin-top: 30px;
+            transition: 5s;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        li {
+            font-size: 30px;
+        }
+    </style>
+
+
 </head>
+
 <body>
-    
+
+    <div id="square">
+        <h1>asdasdasd</h1>
+    </div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+    <div>
+        <button onclick="addListItem()">Click me</button>
+    </div>
+
+    <script src="./Lecture6.js"></script>
 
 
 
 
+    <ul id="list">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ul>
 
-    <script src="./Excercises.js"></script>   
+    <script>
+        function addListItem() {
+            let list = document.getElementById("list")
+            var newLi = document.createElement('li');
+            newLi.innerHTML = 'გამარჯობა!';
+
+            list.appendChild(newLi);
+        }
+
+    </script>
+
+
+
+    <!-- <script src="./Excercises.js"></script>    -->
     <!-- <script>
-        var x = 5; 
-        var y = 10;
-        console.log(x + y/0);
         console.log("Hi Hitler, You are always on our mind <3");
     </script>    -->
 </body>
+
 </html>

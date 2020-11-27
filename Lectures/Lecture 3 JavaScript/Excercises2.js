@@ -260,7 +260,7 @@ space()
 */
 
 let myblackCatJson = JSON.stringify(blackCat);
-write(myblackCatJson);
+write(myblackCatJson.split(":"));
 write(blackCat);
 
 
