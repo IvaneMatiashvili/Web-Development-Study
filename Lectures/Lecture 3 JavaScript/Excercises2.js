@@ -142,6 +142,29 @@ space()
 */
 
 
+try{
+    let a;
+    let b=0;
+    let numberSplit=a/b;
+    
+    if(b==0){
+        throw "cant devide on 0";
+    }
+     
+}
+
+catch (err){
+    write(err);
+}
+
+finally{
+    write("This task is done");
+
+}
+
+space()
+
+
 
 // #6 
 /*
@@ -203,6 +226,7 @@ let blackCat = {
 
 
 
+
 write(`name =${blackCat.name}`);
 write(`eyeColor =${blackCat.eyeColor}`);
 write(`weight = ${blackCat.weight}`);
@@ -227,13 +251,19 @@ write(`favPhrace = ${blackCat.favPhrace}`);
 space()
 blackCat.myPrint()
 
-
+space()
 
 // #7
 /*
     წინა ჯავასკრიპტ ობექტი გადაიყვანე ჯეისონის ობიექტად და დამიბეჭდე.
 
 */
+
+let myblackCatJson = JSON.stringify(blackCat);
+write(myblackCatJson);
+write(blackCat);
+
+
 
 
 
