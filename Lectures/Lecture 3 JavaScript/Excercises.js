@@ -114,7 +114,12 @@ while (x2 < 51) {
 
 */
 
-
+for(let x=1; x<=100; x++){
+    if(x%2==0)
+      console.log(x);
+    if(x==44) continue;
+    if(x==78) continue;
+}
 
 
 // #6 
