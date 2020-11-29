@@ -27,12 +27,11 @@
         }
     </style>
 
-
 </head>
 
 <body>
 
-    <div id="square">
+    <!-- <div id="square">
         <h1>asdasdasd</h1>
     </div>
 
@@ -49,15 +48,65 @@
     <script src="./Lecture6.js"></script>
 
 
+    <form>
+        <input type="tel" placeholder="Phone!">
+        <input type="tel" placeholder="Phone!">
+    </form>
+    <form>
+        
+        <input type="password" placeholder="password">
+        <input type="password" placeholder="password">
+    </form>
+    <form>
+        <input type="text" placeholder="text">
+        <input type="text" placeholder="text">
+    </form> -->
 
 
-    <ul id="list">
+
+
+
+
+
+
+    <!-- <ul id="list">
         <li>0</li>
         <li>1</li>
         <li>2</li>
-    </ul>
+    </ul> -->
+    <!-- e.target.value ჯავასკრიპტის ფაილიდან და არა this.value -->
+    <input type="text" onChange="console.log(this.value)">
 
-    <script>
+
+
+
+
+    <div id="square" onMouseover="changeColor('#00ff0d')" onDblclick="changeColor('red')">
+        <h1>Redison Square</h1>
+    </div>
+
+
+
+    <!-- <button onclick="changeColor('green')">text-ColorChanger</button> -->
+    <button onclick="changeText(this)">text-ColorChanger</button>
+    <div onclick="changeColor('blue')"
+        style="height: 100px;width:200px;display:inline-block;background-color:rgb(0, 255, 13);">
+    </div>
+    <button id="button2">BUTTON 2</button>
+    <button id="button3">BUTTON 3</button>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
         function addListItem() {
             let list = document.getElementById("list")
             var newLi = document.createElement('li');
@@ -66,14 +115,13 @@
             list.appendChild(newLi);
         }
 
-    </script>
-
-
-
+    </script> -->
     <!-- <script src="./Excercises.js"></script>    -->
     <!-- <script>
         console.log("Hi Hitler, You are always on our mind <3");
     </script>    -->
+    <script src="./Lecture7.js"></script>
+
 </body>
 
 </html>

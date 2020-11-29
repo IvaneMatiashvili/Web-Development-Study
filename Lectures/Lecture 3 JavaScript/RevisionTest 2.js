@@ -6,7 +6,6 @@
 // /*
 //     შექმენი ბულეან ტიპის ცვლადი sunnyDay
 
-
 //     თუ sunnyDay ჭეშმარიტია (true) კონსოლში დააბეჭდინე "such a sunny day"
 //     თუ არა დააბეჭინე "i love bad weather :3 "//
 
