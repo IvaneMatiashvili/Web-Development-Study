@@ -1,10 +1,10 @@
-function Task(id){
+function Task(id) {
     console.log("========================================" + id + "========================================")
 }
-function log(content){
+function log(content) {
     console.log(content)
 }
-function space(){
+function space() {
     console.log()
     console.log()
     console.log()
@@ -51,6 +51,31 @@ Good Luck, Hail Hitler!
 */
 Task(1)
 
+let number1 = 93;
+let number2 = 7;
+log(`93%7=${number1 % number2}`);
+
+space();
+
+let greeting = "Hello";
+let cuteAnimal = "NineTailed Fox";
+log(`${greeting + " " + cuteAnimal}`);
+
+space();
+
+let st1 = "One day in the";
+let st2 = "year of the fox";
+log(`${st1 + " " + st2}`);
+
+space();
+
+log("Came the time remembered well \n When a strong young man of the rising \n Sun with the tolling of the great bell")
+
+space();
+
+var zNull = null;
+var myVar;
+log(`${zNull} ${myVar} `);
 
 
 
@@ -66,7 +91,16 @@ Task(1)
 ცვლადების გამოყენებით გამოიტანე ეკრანზე შემდგი ორი წარწერა  "29HappyProgrammingDay" "HappyProgrammingDay821"
 
 */
+Task(2);
 
+space();
+
+
+let num1 = 21;
+let num2 = 8;
+let text1 = "HappyProgrammingDay";
+log(`${num1 + num2 + text1}`);
+log(`${text1 + num2 + num1}`);
 
 
 
@@ -79,6 +113,34 @@ Task(1)
 
     ეს გააკეთე სასმივე ციკლის გამოყენებით. (ანუ სამნაირად)
 */
+Task(3);
+
+space();
+
+for (var x = 0; x <= 50; ++x)
+    if (x % 3 === 0) {
+        console.log(x);
+    }
+
+
+var x1 = 0;
+do {
+    if (x1 % 3 === 0) {
+        console.log(x1);
+    }
+    ++x1;
+}
+while (x1 < 50)
+
+
+var x2 = 0;
+while (x2 < 50) {
+    if (x2 % 3 === 0) {
+        console.log(x2);
+    }
+    ++x2;
+}
+
 
 
 
@@ -93,7 +155,10 @@ Task(1)
 
 "სიზარმაცე ჭკვიანი პროგრამისტის აუცილებელი თვისებაა"
 */
+Task(4)
 
+space();
+//alert("სიზარმაცე ჭკვიანი პროგრამისტის აუცილებელი თვისებაა");
 
 
 
@@ -109,6 +174,18 @@ Task(1)
     პირველი სიმბოლო, 15-ე სიმბოლო.
     ციკლის გამოყენებით ჩამოწერე სტრინგში შემავვალითითოეული სიმბოლო.
 */
+Task(5);
+
+space();
+
+let myString = "Santa Claus is Real, you better belive me or you won't get the new Iphone you wished for, you little motherFu**er!";
+log(myString.length);
+log(myString[0]);
+log(myString[14]);
+space();
+for (let i = 0; i < myString.length; ++i) {
+    log(myString[i]);
+}
 
 
 
@@ -127,6 +204,25 @@ Task(1)
 თუ მანქანის ფერი იქნება სხვა მაშინ ამოვიდეს წარწერა "you've got some wierd car, bro"
 
 */
+Task(6);
+
+space()
+
+let car = {
+    model: "BMw",
+    color: "red",
+    speed: 8000,
+
+}
+switch (car.color) {
+    case "red": console.log("Car's color = red, model=BMW,speed = 8000.");
+    case "blue": console.log("you've got some wierd car, bro");
+    case "green": console.log("you've got some wierd car, bro");
+    default: console.log("beeenveee jooo dedamouvaaa joooo benveee manqanaaaa");
+}
+
+
+
 
 
 
@@ -142,7 +238,17 @@ Task(1)
 და ციკლის საშუალებით დაბეჭდავს ამ მასივის ყველა ელმენტს კონსოლში.
 
 */
+Task(7);
 
+space();
+
+
+
+function printMyArray(arr) {
+    for (let i = 0; i < arr.length; ++i) {
+        console.log(arr[i]);
+    }
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -153,8 +259,14 @@ Task(1)
 
 წინა ფუნქციის გამოყენბით დაბეჭდე ყველა ელემენტი
 */
+Task(8);
+
+space();
 
 
+
+let MyArray = ["generali kutuzovi", "hitleri", "stalini", "gela", 77, true, false];
+printMyArray(MyArray);
 
 
 
@@ -178,7 +290,30 @@ Task(1)
 
 */
 
+Task(9);
 
+space();
+
+let Keybord = {
+    keyNumber: 88,
+    OctaveNumber: 8,
+    Material: "wood",
+    isBeautiful: true,
+    print: function () {
+        console.log(`keyNumber = ${this.keyNumber}, OctaveNumber =${this.OctaveNumber}, Material =${this.Material},isBeautiful =${this.isBeautiful}  `)
+    },
+
+    changeMaterial: function (newMaterial) {
+        this.Material = newMaterial;
+    },
+}
+
+
+
+Keybord.print();
+Keybord.changeMaterial("cool wood");
+log(Keybord.Material);
+Keybord.print();
 
 
 
@@ -191,6 +326,19 @@ Task(1)
 //     თუ sunnyDay ჭეშმარიტია (true) კონსოლში დააბეჭდინე "such a sunny day"
 //     თუ არა დააბეჭინე "i love bad weather :3 "//
 
+Task(10);
+
+space();
+
+let sunnyDay;
+
+if (sunnyDay = true) {
+    console.log("such a sunny day")
+}
+else {
+
+    console.log("i love bad weather :3 ")
+}
 
 
 
@@ -208,6 +356,29 @@ Task(1)
 
 //     !! არ !! გამოიყენო სვიჩი/
 // */
+Task(11);
+
+space();
+
+let person;
+
+if (person = "Fraddie Mercury") {
+    console.log("Freddie is Legendary Vocalist!")
+}
+if (person = "John Deacon") {
+    console.log("John Deacon is Legendary Bassist!")
+}
+if (person = "Roger Taylor") {
+    console.log("Roger Taylor is Legendary Drummer!")
+}
+if (person = "Brain May") {
+    console.log("Brain May is Legendary Guitarist!")
+}
+else {
+
+    console.log("who the hell is that?"
+    )
+}
 
 
 
@@ -227,6 +398,24 @@ Task(1)
 
 //     ეს კოდი გადამიკეთე ისე რომ გამოიყენო while ციკლი for ის ნაცვლად
 
+Task(12);
+space();
+Task(12.1);
+space();
+
+var sum = 0;
+for (var i = 1; i < 21; i++) {
+    sum += i;
+}
+console.log("sum - " + sum);
+var sum1 = 0;
+var i = 1
+while (i < 21) {
+    sum1 += i;
+    i++;
+
+}
+console.log("sum1 - " + sum1);
 
 
 
@@ -249,6 +438,25 @@ Task(1)
 //     გადამიკეთე ეს კოდი for ციკლის გამოყენებით
 
 // */
+Task(12.2)
+space();
+
+var i = 0;
+while (i < 31) {
+    if (i % 3 == 0) {
+        console.log("i%3=0");
+    } else {
+        console.log("i ar aris 3-is jeradi");
+    } i++;
+}
+
+for (var i = 0; i < 31; i++)
+    if (i % 3 == 0) {
+        console.log("i%3=0");
+    } else {
+        console.log("i ar aris 3-is jeradi");
+    }
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -259,16 +467,27 @@ Task(1)
     შექმენი myArray მასივი რომლიც შეიცავს შემდეგ მონაცემებს: "elment1","element2",true,35,-100.
     PrintArray ფუნქციის გამოძახებით დაბეჭდე myArray-ის ყველა ელემენტი.
 */
+Task(13);
+space();
+
+function printMyArray(arr) {
+    for (let i = 0; i < arr.length; ++i) {
+        console.log(arr[i]);
+    }
+}
+
+let MyArray1 = [ "elment1","element2",true,35,-100.];
+printMyArray(MyArray1);
 
 
-    
+
 
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////  Task 14 - ობიექტები //////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////
 /*
     შექმენი ობიექტი BigBrother
-    
+
     რომელსაც ექნება შემდეგი თვისებები:
     - name              (string)
     - surname           (string)
@@ -286,3 +505,38 @@ Task(1)
     გამოიძახე Protect, Print, changeStrenghtState, Print.   (იმ თანმიმდევრობით როგორც აქ წერია)
 
 */
+Task(14);
+space();
+
+
+let BigBrother = {
+    name : "mamfrod",
+    surname : "mamfrodia",
+    age : 25,
+    isStrong : true,
+    protect: function () {if (this.isStrong = true) {
+        console.log("I will Protect Everybody!")
+    }
+    else {
+    
+        console.log("I must get Stronger!.")
+    }
+    },    
+
+    changeStrenghtState: function () { if (this.isStrong = true) {
+        console.log(!true);
+    }
+    if (this.isStrong = false) {
+        console.log(!false);
+    }
+    },
+    print: function () {
+        console.log(`name = ${this. name}, surname =${this. surname}, age =${this.age},isStrong =${this.isStrong}`)
+    },
+}
+
+
+BigBrother.protect();
+BigBrother.print();
+BigBrother.changeStrenghtState();
+BigBrother.print();
