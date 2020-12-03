@@ -1,3 +1,15 @@
+function Task(id){
+    console.log("========================================" + id + "========================================")
+}
+function log(content){
+    console.log(content)
+}
+function space(){
+    console.log()
+    console.log()
+    console.log()
+}
+
 /*
 ტესტის აღწერა:
 რაოდენობა        - 14 დავალება
@@ -37,6 +49,10 @@ Good Luck, Hail Hitler!
 
     შექმენი null ტიპის ცვლადი შექმნი undifined ტიპის ცვლადი და ორივ დაბეჭდე.
 */
+Task(1)
+
+
+
 
 
 
